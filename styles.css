@@ -1,0 +1,467 @@
+
+        :root {
+            --primary-color: #2ECC71;
+            /* M-Pesa Green or High-Converting Green */
+            --secondary-color: #34495E;
+            /* Dark Blue/Grey for text */
+            --background-color: #F8F9FA;
+            --white-color: #ffffff;
+            --dark-color: #2C3E50;
+            --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--secondary-color);
+            line-height: 1.6;
+            background-color: var(--background-color);
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            box-shadow: var(--shadow-light);
+        }
+
+        .btn-primary:hover {
+            background-color: #27AE60;
+            /* Darker Green */
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: var(--white-color);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: #ECF0F1;
+            /* Light Grey */
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: var(--dark-color);
+            font-weight: 900;
+        }
+
+        /* 1️⃣ Hero Section */
+        #hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('placeholder-tech-developer-bg.jpg') center/cover;
+            color: var(--white-color);
+            padding: 100px 0;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-content h1 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            font-weight: 900;
+            line-height: 1.1;
+        }
+
+        .hero-content p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        .hero-buttons .btn {
+            margin: 0 10px;
+        }
+
+        /* Trust Badges (Placeholder) */
+        .trust-badges {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            opacity: 0.8;
+        }
+
+        .badge-item {
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .badge-item i {
+            color: var(--primary-color);
+            margin-right: 5px;
+        }
+
+        /* 2️⃣ How It Works Section */
+        #how-it-works {
+            padding: 80px 0;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .step-card {
+            background-color: var(--white-color);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-light);
+            transition: transform 0.3s;
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .step-icon {
+            color: var(--primary-color);
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .step-card h3 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+
+        /* 3️⃣ Features Section */
+        #features {
+            padding: 80px 0;
+            background-color: var(--white-color);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-item {
+            font-size: 1.1em;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-item i {
+            color: var(--primary-color);
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+
+        /* 4️⃣ Pricing Plans Section */
+        #pricing {
+            padding: 80px 0;
+            background-color: var(--background-color);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .plan-card {
+            background-color: var(--white-color);
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: var(--shadow-light);
+            transition: border 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .plan-card.highlight {
+            border-color: var(--primary-color);
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(46, 204, 113, 0.3);
+        }
+
+        .plan-card h3 {
+            font-size: 1.8em;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 2.5em;
+            font-weight: 900;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .price small {
+            font-size: 0.5em;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .plan-card ul {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .plan-card ul li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        /* 5️⃣ API Documentation Section */
+        #api-docs {
+            padding: 80px 0;
+            background-color: var(--dark-color);
+            color: var(--white-color);
+        }
+
+        #api-docs .section-title {
+            color: var(--primary-color);
+        }
+
+        .api-content {
+            display: flex;
+            gap: 40px;
+        }
+
+        .api-details {
+            flex: 1;
+        }
+
+        .code-snippet {
+            flex: 1;
+            background-color: #3b506b;
+            /* Slightly lighter dark */
+            border-radius: 8px;
+            padding: 20px;
+            overflow-x: auto;
+        }
+
+        .api-details h4 {
+            font-size: 1.4em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .api-details ul {
+            list-style: disc;
+            margin-left: 20px;
+            opacity: 0.9;
+        }
+
+        .code-snippet pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        /* 6️⃣ Testimonials Section */
+        #testimonials {
+            padding: 80px 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background-color: var(--white-color);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-light);
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .quote {
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .author {
+            font-weight: 700;
+            color: var(--dark-color);
+        }
+
+        /* 7️⃣ FAQ Section */
+        #faq {
+            padding: 80px 0;
+            background-color: var(--white-color);
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1em;
+            color: var(--dark-color);
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            padding-top: 10px;
+            display: none;
+            /* Initially hidden */
+            color: var(--secondary-color);
+            font-size: 0.95em;
+        }
+
+        /* 8️⃣ CTA Footer */
+        #cta-footer {
+            background-color: var(--primary-color);
+            padding: 60px 0;
+            text-align: center;
+            color: var(--white-color);
+        }
+
+        #cta-footer h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            font-weight: 900;
+        }
+
+        #cta-footer .btn-cta {
+            background-color: var(--white-color);
+            color: var(--primary-color);
+            font-size: 1.2em;
+            padding: 15px 40px;
+            font-weight: 900;
+        }
+
+        #cta-footer .btn-cta:hover {
+            background-color: #eee;
+        }
+
+        /* 9️⃣ Contact / Support Section */
+        #contact {
+            padding: 50px 0;
+            background-color: #EAF2F8;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: block;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: block;
+            align-items: center;
+            font-size: 1.1em;
+        }
+
+        .contact-item i {
+            color: var(--dark-color);
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+
+        #demo-mockup {
+            padding: 80px 0;
+        }
+
+        .demo-mockup-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .mockup-visual {
+            flex: 1;
+            padding: 20px;
+            background-color: #ddd;
+            min-height: 300px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+        }
+
+        .code-integration {
+            padding: 40px;
+            background-color: var(--dark-color);
+            color: var(--white-color);
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+
+        .code-integration h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .code-integration pre {
+            background-color: #3b506b;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .copy-btn {
+            float: right;
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .copy-btn:hover {
+            background-color: #27AE60;
+        }
