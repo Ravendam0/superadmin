@@ -2,7 +2,7 @@
 
 **Superadmin** is a web application that allows business owners (super-admins) to **request an M-PESA shortcode instantly** and start sending STK (Sim Toolkit) payment prompts to customers. This enables merchants to quickly integrate mobile money payments into their business.
 
-Live demo: [[your live website link here]](https://superadmin.ci.co.ke/)
+Live demo: [[Click here to view Live](https://superadmin.ci.co.ke/)
 
 ---
 
